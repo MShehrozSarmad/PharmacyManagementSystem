@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -38,8 +39,12 @@
             this.lgoutBtn = new Guna.UI2.WinForms.Guna2Button();
             this.addUsrBtn = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_Dashboard1 = new PharmacyManagementSystem.AdminUC.UC_Dashboard();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -99,6 +104,7 @@
             this.dshbrdBtn.Size = new System.Drawing.Size(300, 45);
             this.dshbrdBtn.TabIndex = 2;
             this.dshbrdBtn.Text = "Dashboard";
+            this.dshbrdBtn.Click += new System.EventHandler(this.dshbrdBtn_Click);
             // 
             // viewUsrBtn
             // 
@@ -187,11 +193,40 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "username";
             // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.Controls.Add(this.uC_Dashboard1);
+            this.panel3.Location = new System.Drawing.Point(365, 1);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1022, 769);
+            this.panel3.TabIndex = 2;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel3;
+            // 
+            // uC_Dashboard1
+            // 
+            this.uC_Dashboard1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_Dashboard1.BackColor = System.Drawing.Color.White;
+            this.uC_Dashboard1.Location = new System.Drawing.Point(2, -1);
+            this.uC_Dashboard1.Name = "uC_Dashboard1";
+            this.uC_Dashboard1.Size = new System.Drawing.Size(1016, 770);
+            this.uC_Dashboard1.TabIndex = 0;
+            this.uC_Dashboard1.Load += new System.EventHandler(this.uC_Dashboard1_Load);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1383, 768);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin";
@@ -201,6 +236,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -216,5 +252,8 @@
         private Guna.UI2.WinForms.Guna2Button prflBtn;
         private Guna.UI2.WinForms.Guna2Button viewUsrBtn;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private AdminUC.UC_Dashboard uC_Dashboard1;
     }
 }

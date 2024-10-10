@@ -19,7 +19,7 @@ namespace PharmacyManagementSystem
 
         private void Admin_Load(object sender, EventArgs e)
         {
-
+            uC_Dashboard1.Visible = false;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -32,6 +32,17 @@ namespace PharmacyManagementSystem
             Form1 signin = new Form1();
             signin.Show();
             this.Hide();
+        }
+
+        private void dshbrdBtn_Click(object sender, EventArgs e)
+        {
+            uC_Dashboard1.Visible = true;
+            uC_Dashboard1.BringToFront();
+        }
+
+        private void uC_Dashboard1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

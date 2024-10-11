@@ -48,6 +48,8 @@
             this.resetbtn = new Guna.UI2.WinForms.Guna2Button();
             this.signupBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -219,6 +221,7 @@
             this.txtUsrname.SelectedText = "";
             this.txtUsrname.Size = new System.Drawing.Size(543, 52);
             this.txtUsrname.TabIndex = 5;
+            this.txtUsrname.TextChanged += new System.EventHandler(this.txtUsrname_TextChanged);
             // 
             // label6
             // 
@@ -356,11 +359,22 @@
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Location = new System.Drawing.Point(850, 374);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(53, 38);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
             // UC_Adduser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.resetbtn);
             this.Controls.Add(this.signupBtn);
             this.Controls.Add(this.txtRole);
@@ -381,6 +395,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UC_Adduser";
             this.Size = new System.Drawing.Size(1356, 946);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,5 +421,6 @@
         private Guna.UI2.WinForms.Guna2Button resetbtn;
         private Guna.UI2.WinForms.Guna2Button signupBtn;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

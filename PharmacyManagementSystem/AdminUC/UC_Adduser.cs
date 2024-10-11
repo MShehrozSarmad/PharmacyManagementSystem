@@ -50,5 +50,19 @@ namespace PharmacyManagementSystem.AdminUC
                 MessageBox.Show("User already exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void txtUsrname_TextChanged(object sender, EventArgs e)
+        {
+            query = "select * from users where username='"+txtUsrname.Text+"'";
+            DataSet ds = fn.getData(query);
+            if (ds.Tables[0].Rows.Count == 0)
+            {
+                pictureBox1.ImageLocation = @"E:\c#\project\PharmacyManagementSystem\images\yes.png";
+            }
+            else
+            {
+                pictureBox1.ImageLocation = @"E:\c#\project\PharmacyManagementSystem\images\no.png";
+            }
+        }
     }
 }

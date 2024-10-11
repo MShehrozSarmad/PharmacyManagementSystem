@@ -20,6 +20,8 @@ namespace PharmacyManagementSystem
         private void Admin_Load(object sender, EventArgs e)
         {
             uC_Dashboard1.Visible = false;
+            dshbrdBtn.PerformClick();
+            uC_Adduser1.Visible = false;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -43,6 +45,12 @@ namespace PharmacyManagementSystem
         private void uC_Dashboard1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void addUsrBtn_Click(object sender, EventArgs e)
+        {
+            uC_Adduser1.Visible = true;
+            uC_Adduser1.BringToFront();
         }
     }
 }

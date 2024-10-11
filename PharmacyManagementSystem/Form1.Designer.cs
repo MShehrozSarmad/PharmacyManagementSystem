@@ -85,19 +85,32 @@
             // exitbtn
             // 
             this.exitbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitbtn.Animated = true;
+            this.exitbtn.AutoRoundedCorners = true;
+            this.exitbtn.BackColor = System.Drawing.Color.Transparent;
+            this.exitbtn.BorderColor = System.Drawing.Color.Transparent;
+            this.exitbtn.BorderRadius = 14;
+            this.exitbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.exitbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.exitbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.exitbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.exitbtn.FillColor = System.Drawing.Color.White;
+            this.exitbtn.FillColor = System.Drawing.Color.Transparent;
+            this.exitbtn.FocusedColor = System.Drawing.Color.Transparent;
             this.exitbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.exitbtn.ForeColor = System.Drawing.Color.White;
+            this.exitbtn.ForeColor = System.Drawing.Color.Transparent;
+            this.exitbtn.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.exitbtn.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.exitbtn.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.exitbtn.HoverState.ForeColor = System.Drawing.Color.Transparent;
             this.exitbtn.Image = ((System.Drawing.Image)(resources.GetObject("exitbtn.Image")));
             this.exitbtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.exitbtn.Location = new System.Drawing.Point(1343, 3);
+            this.exitbtn.IndicateFocus = true;
+            this.exitbtn.Location = new System.Drawing.Point(1345, 5);
             this.exitbtn.Name = "exitbtn";
-            this.exitbtn.Size = new System.Drawing.Size(38, 38);
+            this.exitbtn.Size = new System.Drawing.Size(34, 31);
             this.exitbtn.TabIndex = 1;
+            this.exitbtn.UseTransparentBackground = true;
             this.exitbtn.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // username
@@ -154,7 +167,7 @@
             this.usrnameinput.PlaceholderText = "";
             this.usrnameinput.SelectedText = "";
             this.usrnameinput.Size = new System.Drawing.Size(407, 42);
-            this.usrnameinput.TabIndex = 5;
+            this.usrnameinput.TabIndex = 0;
             this.usrnameinput.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // guna2TextBox2
@@ -202,7 +215,7 @@
             this.signinbtn.Location = new System.Drawing.Point(762, 556);
             this.signinbtn.Name = "signinbtn";
             this.signinbtn.Size = new System.Drawing.Size(116, 43);
-            this.signinbtn.TabIndex = 7;
+            this.signinbtn.TabIndex = 2;
             this.signinbtn.Text = "Sign In";
             this.signinbtn.Click += new System.EventHandler(this.signinbtn_Click);
             // 
@@ -221,7 +234,7 @@
             this.resetbtn.Location = new System.Drawing.Point(888, 556);
             this.resetbtn.Name = "resetbtn";
             this.resetbtn.Size = new System.Drawing.Size(116, 43);
-            this.resetbtn.TabIndex = 7;
+            this.resetbtn.TabIndex = 3;
             this.resetbtn.Text = "Reset";
             this.resetbtn.Click += new System.EventHandler(this.resetbtn_Click);
             // 
@@ -249,7 +262,7 @@
             this.pswrdinput.PlaceholderText = "";
             this.pswrdinput.SelectedText = "";
             this.pswrdinput.Size = new System.Drawing.Size(407, 42);
-            this.pswrdinput.TabIndex = 8;
+            this.pswrdinput.TabIndex = 1;
             this.pswrdinput.TextChanged += new System.EventHandler(this.pswrdinput_TextChanged);
             // 
             // Form1

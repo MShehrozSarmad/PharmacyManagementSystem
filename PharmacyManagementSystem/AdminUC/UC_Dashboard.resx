@@ -1195,7 +1195,7 @@ They can add and delete other admin
 users, and can approve and decline edits 
 made by other users.</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
+  <data name="label12.Text" xml:space="preserve">
     <value>Admin is the role with highest evel of 
 access.
 
@@ -1209,7 +1209,7 @@ They can add and delete other admin
 users, and can approve and decline edits 
 made by other users.</value>
   </data>
-  <data name="label12.Text" xml:space="preserve">
+  <data name="label11.Text" xml:space="preserve">
     <value>Admin is the role with highest evel of 
 access.
 

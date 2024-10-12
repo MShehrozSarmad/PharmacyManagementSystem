@@ -284,7 +284,7 @@
             this.txtDob.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.txtDob.IndicateFocus = true;
             this.txtDob.Location = new System.Drawing.Point(85, 569);
-            this.txtDob.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDob.Margin = new System.Windows.Forms.Padding(4);
             this.txtDob.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtDob.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtDob.Name = "txtDob";
@@ -306,10 +306,10 @@
             this.txtRole.ForeColor = System.Drawing.Color.Black;
             this.txtRole.ItemHeight = 30;
             this.txtRole.Items.AddRange(new object[] {
-            "Pharmasist",
+            "Pharmacist",
             "Admin"});
             this.txtRole.Location = new System.Drawing.Point(85, 262);
-            this.txtRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRole.Margin = new System.Windows.Forms.Padding(4);
             this.txtRole.Name = "txtRole";
             this.txtRole.Size = new System.Drawing.Size(541, 36);
             this.txtRole.StartIndex = 0;
@@ -328,7 +328,7 @@
             this.resetbtn.ImageSize = new System.Drawing.Size(27, 27);
             this.resetbtn.IndicateFocus = true;
             this.resetbtn.Location = new System.Drawing.Point(1013, 718);
-            this.resetbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resetbtn.Margin = new System.Windows.Forms.Padding(4);
             this.resetbtn.Name = "resetbtn";
             this.resetbtn.Size = new System.Drawing.Size(155, 53);
             this.resetbtn.TabIndex = 8;
@@ -348,7 +348,7 @@
             this.signupBtn.ImageSize = new System.Drawing.Size(23, 23);
             this.signupBtn.IndicateFocus = true;
             this.signupBtn.Location = new System.Drawing.Point(808, 719);
-            this.signupBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.signupBtn.Margin = new System.Windows.Forms.Padding(4);
             this.signupBtn.Name = "signupBtn";
             this.signupBtn.Size = new System.Drawing.Size(155, 53);
             this.signupBtn.TabIndex = 7;
@@ -392,7 +392,7 @@
             this.Controls.Add(this.name);
             this.Controls.Add(this.usrrole);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_Adduser";
             this.Size = new System.Drawing.Size(1356, 946);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -12,15 +12,24 @@ namespace PharmacyManagementSystem
 {
     public partial class Admin : Form
     {
+
+        String user = "";
         public Admin()
         {
             InitializeComponent();
         }
 
-        public Admin(String user)
+        public string ID
+        {
+            get { return user.ToString(); }
+        }
+
+        public Admin(String username)
         {
             InitializeComponent();
-            lblUsrname.Text = user;
+            lblUsrname.Text = username;
+            user = username;
+            uC_ViewUser1.ID = ID;
         }
 
         private void Admin_Load(object sender, EventArgs e)

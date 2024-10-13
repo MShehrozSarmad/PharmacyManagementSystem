@@ -40,12 +40,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_ViewUser1 = new PharmacyManagementSystem.AdminUC.UC_ViewUser();
             this.uC_Adduser1 = new PharmacyManagementSystem.AdminUC.UC_Adduser();
             this.uC_Dashboard1 = new PharmacyManagementSystem.AdminUC.UC_Dashboard();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_ViewUser1 = new PharmacyManagementSystem.AdminUC.UC_ViewUser();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -65,7 +65,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(488, 948);
             this.panel1.TabIndex = 1;
@@ -100,7 +100,7 @@
             this.addUsrBtn.Image = ((System.Drawing.Image)(resources.GetObject("addUsrBtn.Image")));
             this.addUsrBtn.ImageSize = new System.Drawing.Size(26, 26);
             this.addUsrBtn.Location = new System.Drawing.Point(88, 462);
-            this.addUsrBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addUsrBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addUsrBtn.Name = "addUsrBtn";
             this.addUsrBtn.Size = new System.Drawing.Size(400, 55);
             this.addUsrBtn.TabIndex = 6;
@@ -120,7 +120,7 @@
             this.lgoutBtn.ForeColor = System.Drawing.Color.White;
             this.lgoutBtn.Image = ((System.Drawing.Image)(resources.GetObject("lgoutBtn.Image")));
             this.lgoutBtn.Location = new System.Drawing.Point(88, 775);
-            this.lgoutBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lgoutBtn.Margin = new System.Windows.Forms.Padding(4);
             this.lgoutBtn.Name = "lgoutBtn";
             this.lgoutBtn.Size = new System.Drawing.Size(400, 55);
             this.lgoutBtn.TabIndex = 5;
@@ -140,7 +140,7 @@
             this.prflBtn.ForeColor = System.Drawing.Color.White;
             this.prflBtn.Image = ((System.Drawing.Image)(resources.GetObject("prflBtn.Image")));
             this.prflBtn.Location = new System.Drawing.Point(88, 671);
-            this.prflBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.prflBtn.Margin = new System.Windows.Forms.Padding(4);
             this.prflBtn.Name = "prflBtn";
             this.prflBtn.Size = new System.Drawing.Size(400, 55);
             this.prflBtn.TabIndex = 4;
@@ -160,7 +160,7 @@
             this.viewUsrBtn.Image = ((System.Drawing.Image)(resources.GetObject("viewUsrBtn.Image")));
             this.viewUsrBtn.ImageSize = new System.Drawing.Size(22, 22);
             this.viewUsrBtn.Location = new System.Drawing.Point(88, 569);
-            this.viewUsrBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.viewUsrBtn.Margin = new System.Windows.Forms.Padding(4);
             this.viewUsrBtn.Name = "viewUsrBtn";
             this.viewUsrBtn.Size = new System.Drawing.Size(400, 55);
             this.viewUsrBtn.TabIndex = 3;
@@ -181,7 +181,7 @@
             this.dshbrdBtn.Image = ((System.Drawing.Image)(resources.GetObject("dshbrdBtn.Image")));
             this.dshbrdBtn.ImageSize = new System.Drawing.Size(19, 19);
             this.dshbrdBtn.Location = new System.Drawing.Point(88, 358);
-            this.dshbrdBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dshbrdBtn.Margin = new System.Windows.Forms.Padding(4);
             this.dshbrdBtn.Name = "dshbrdBtn";
             this.dshbrdBtn.Size = new System.Drawing.Size(400, 55);
             this.dshbrdBtn.TabIndex = 2;
@@ -204,7 +204,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(103, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 171);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -221,18 +221,20 @@
             this.panel3.Controls.Add(this.uC_Adduser1);
             this.panel3.Controls.Add(this.uC_Dashboard1);
             this.panel3.Location = new System.Drawing.Point(487, 1);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1363, 946);
             this.panel3.TabIndex = 2;
             // 
-            // guna2Elipse1
+            // uC_ViewUser1
             // 
-            this.guna2Elipse1.TargetControl = this.panel3;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.panel3;
+            this.uC_ViewUser1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
+            this.uC_ViewUser1.Location = new System.Drawing.Point(0, -2);
+            this.uC_ViewUser1.Name = "uC_ViewUser1";
+            this.uC_ViewUser1.Size = new System.Drawing.Size(1356, 946);
+            this.uC_ViewUser1.TabIndex = 2;
             // 
             // uC_Adduser1
             // 
@@ -259,17 +261,17 @@
             this.uC_Dashboard1.TabIndex = 0;
             this.uC_Dashboard1.Load += new System.EventHandler(this.uC_Dashboard1_Load);
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel3;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel3;
+            // 
             // guna2Elipse3
             // 
             this.guna2Elipse3.TargetControl = this.panel3;
-            // 
-            // uC_ViewUser1
-            // 
-            this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
-            this.uC_ViewUser1.Location = new System.Drawing.Point(0, -2);
-            this.uC_ViewUser1.Name = "uC_ViewUser1";
-            this.uC_ViewUser1.Size = new System.Drawing.Size(1356, 946);
-            this.uC_ViewUser1.TabIndex = 2;
             // 
             // Admin
             // 
@@ -279,7 +281,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";

@@ -46,6 +46,8 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_Profile1 = new PharmacyManagementSystem.AdminUC.UC_Profile();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -145,6 +147,7 @@
             this.prflBtn.Size = new System.Drawing.Size(400, 55);
             this.prflBtn.TabIndex = 4;
             this.prflBtn.Text = "Profile";
+            this.prflBtn.Click += new System.EventHandler(this.prflBtn_Click);
             // 
             // viewUsrBtn
             // 
@@ -217,6 +220,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.Controls.Add(this.uC_Profile1);
             this.panel3.Controls.Add(this.uC_ViewUser1);
             this.panel3.Controls.Add(this.uC_Adduser1);
             this.panel3.Controls.Add(this.uC_Dashboard1);
@@ -273,6 +277,18 @@
             // 
             this.guna2Elipse3.TargetControl = this.panel3;
             // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this.panel3;
+            // 
+            // uC_Profile1
+            // 
+            this.uC_Profile1.BackColor = System.Drawing.Color.White;
+            this.uC_Profile1.Location = new System.Drawing.Point(0, -1);
+            this.uC_Profile1.Name = "uC_Profile1";
+            this.uC_Profile1.Size = new System.Drawing.Size(1356, 946);
+            this.uC_Profile1.TabIndex = 3;
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -312,5 +328,7 @@
         private AdminUC.UC_Adduser uC_Adduser1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private AdminUC.UC_ViewUser uC_ViewUser1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private AdminUC.UC_Profile uC_Profile1;
     }
 }

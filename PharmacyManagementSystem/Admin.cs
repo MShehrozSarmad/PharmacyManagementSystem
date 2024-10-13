@@ -30,14 +30,16 @@ namespace PharmacyManagementSystem
             lblUsrname.Text = username;
             user = username;
             uC_ViewUser1.ID = ID;
+            uC_Profile1.ID = ID;
         }
 
         private void Admin_Load(object sender, EventArgs e)
         {
             uC_Dashboard1.Visible = false;
-            dshbrdBtn.PerformClick();
             uC_Adduser1.Visible = false;
             uC_ViewUser1.Visible = false;
+            uC_Profile1.Visible = false;
+            dshbrdBtn.PerformClick();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -73,6 +75,12 @@ namespace PharmacyManagementSystem
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void prflBtn_Click(object sender, EventArgs e)
+        {
+            uC_Profile1.Visible = true;
+            uC_Profile1.BringToFront();
         }
     }
 }

@@ -17,16 +17,24 @@ namespace PharmacyManagementSystem
             InitializeComponent();
         }
 
+        public Admin(String user)
+        {
+            InitializeComponent();
+            lblUsrname.Text = user;
+        }
+
         private void Admin_Load(object sender, EventArgs e)
         {
             uC_Dashboard1.Visible = false;
             dshbrdBtn.PerformClick();
             uC_Adduser1.Visible = false;
+            uC_ViewUser1.Visible = false;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-
+            uC_ViewUser1.Visible = true;
+            uC_ViewUser1.BringToFront();
         }
 
         private void lgoutBtn_Click(object sender, EventArgs e)
@@ -51,6 +59,11 @@ namespace PharmacyManagementSystem
         {
             uC_Adduser1.Visible = true;
             uC_Adduser1.BringToFront();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

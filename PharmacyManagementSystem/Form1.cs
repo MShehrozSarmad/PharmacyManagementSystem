@@ -62,7 +62,7 @@ namespace PharmacyManagementSystem
             ds = fn.getData(query);
             if (ds.Tables[0].Rows.Count == 0) {
                 if (usrnameinput.Text == "admin" && pswrdinput.Text == "admin") { 
-                    Admin admn = new Admin();
+                    Admin admn = new Admin(usrnameinput.Text);
                     admn.Show();
                     this.Hide();
                 }
@@ -80,7 +80,7 @@ namespace PharmacyManagementSystem
                     String role = ds.Tables[0].Rows[0][1].ToString();
                     if (role == "Admin")
                     {
-                        Admin admn = new Admin();
+                        Admin admn = new Admin(usrnameinput.Text);
                         admn.Show();
                         this.Hide();
                     }

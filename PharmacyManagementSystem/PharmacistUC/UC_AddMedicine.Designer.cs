@@ -150,9 +150,9 @@
             this.label1.Location = new System.Drawing.Point(57, 46);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 43);
+            this.label1.Size = new System.Drawing.Size(242, 43);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Add User";
+            this.label1.Text = "Add Medicine";
             // 
             // txtMedName
             // 

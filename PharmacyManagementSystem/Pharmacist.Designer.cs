@@ -42,12 +42,14 @@
             this.btnDshbrd = new Guna.UI2.WinForms.Guna2Button();
             this.btnViewMdcn = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uC_ViewMedicines1 = new PharmacyManagementSystem.PharmacistUC.UC_ViewMedicines();
-            this.uC_AddMedicine1 = new PharmacyManagementSystem.PharmacistUC.UC_AddMedicine();
-            this.uC_Dashboard1 = new PharmacyManagementSystem.PharmacistUC.UC_Dashboard();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_ViewMedicines1 = new PharmacyManagementSystem.PharmacistUC.UC_ViewMedicines();
+            this.uC_AddMedicine1 = new PharmacyManagementSystem.PharmacistUC.UC_AddMedicine();
+            this.uC_Dashboard1 = new PharmacyManagementSystem.PharmacistUC.UC_Dashboard();
+            this.uC_ModifyMed1 = new PharmacyManagementSystem.PharmacistUC.UC_ModifyMed();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -226,6 +228,7 @@
             this.btnMdfMdcn.TabIndex = 12;
             this.btnMdfMdcn.Text = "Modify Medicine";
             this.btnMdfMdcn.UseTransparentBackground = true;
+            this.btnMdfMdcn.Click += new System.EventHandler(this.btnMdfMdcn_Click);
             // 
             // btnDshbrd
             // 
@@ -279,6 +282,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.uC_ModifyMed1);
             this.panel2.Controls.Add(this.uC_ViewMedicines1);
             this.panel2.Controls.Add(this.uC_AddMedicine1);
             this.panel2.Controls.Add(this.uC_Dashboard1);
@@ -286,6 +290,26 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1412, 947);
             this.panel2.TabIndex = 1;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 0;
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 0;
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 0;
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 0;
+            this.guna2Elipse4.TargetControl = this.panel2;
             // 
             // uC_ViewMedicines1
             // 
@@ -320,20 +344,16 @@
             this.uC_Dashboard1.Size = new System.Drawing.Size(1412, 948);
             this.uC_Dashboard1.TabIndex = 0;
             // 
-            // guna2Elipse1
+            // uC_ModifyMed1
             // 
-            this.guna2Elipse1.BorderRadius = 0;
-            this.guna2Elipse1.TargetControl = this.panel2;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 0;
-            this.guna2Elipse2.TargetControl = this.panel2;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 0;
-            this.guna2Elipse3.TargetControl = this.panel2;
+            this.uC_ModifyMed1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_ModifyMed1.BackColor = System.Drawing.Color.White;
+            this.uC_ModifyMed1.Location = new System.Drawing.Point(-2, -1);
+            this.uC_ModifyMed1.Name = "uC_ModifyMed1";
+            this.uC_ModifyMed1.Size = new System.Drawing.Size(1412, 947);
+            this.uC_ModifyMed1.TabIndex = 3;
             // 
             // Pharmacist
             // 
@@ -376,5 +396,7 @@
         private PharmacistUC.UC_AddMedicine uC_AddMedicine1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private PharmacistUC.UC_ViewMedicines uC_ViewMedicines1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private PharmacistUC.UC_ModifyMed uC_ModifyMed1;
     }
 }

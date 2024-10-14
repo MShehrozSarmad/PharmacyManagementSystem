@@ -21,17 +21,22 @@ namespace PharmacyManagementSystem
         {
             uC_Dashboard1.Visible = false;
             uC_AddMedicine1.Visible = false;
+            uC_ViewMedicines1.Visible = false;
             btnDshbrd.PerformClick();
         }
 
         private void btnDshbrd_Click(object sender, EventArgs e)
         {
+            uC_AddMedicine1.Visible = false;
+            uC_ViewMedicines1.Visible = false;
             uC_Dashboard1.Visible = true;
             uC_Dashboard1.BringToFront();
         }
 
         private void btnAddMdcn_Click(object sender, EventArgs e)
         {
+            uC_Dashboard1.Visible = false;
+            uC_ViewMedicines1.Visible = false;
             uC_AddMedicine1.Visible = true;
             uC_AddMedicine1.BringToFront();
         }
@@ -41,6 +46,14 @@ namespace PharmacyManagementSystem
             Form1 signin = new Form1();
             signin.Show();
             this.Hide();
+        }
+
+        private void btnViewMdcn_Click(object sender, EventArgs e)
+        {
+            uC_Dashboard1.Visible = false;
+            uC_AddMedicine1.Visible = false;
+            uC_ViewMedicines1.Visible = true;
+            uC_ViewMedicines1.BringToFront();
         }
     }
 }

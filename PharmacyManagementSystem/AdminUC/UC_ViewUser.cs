@@ -53,7 +53,7 @@ namespace PharmacyManagementSystem.AdminUC
             
             } catch
             {
-
+                MessageBox.Show("Something went wrong", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

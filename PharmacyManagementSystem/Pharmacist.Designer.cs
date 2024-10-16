@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pharmacist));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSellMdcn = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMdcnVldt = new Guna.UI2.WinForms.Guna2Button();
             this.lblUsrname = new System.Windows.Forms.Label();
             this.btnAddMdcn = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,14 +41,14 @@
             this.btnDshbrd = new Guna.UI2.WinForms.Guna2Button();
             this.btnViewMdcn = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_ModifyMed1 = new PharmacyManagementSystem.PharmacistUC.UC_ModifyMed();
+            this.uC_ViewMedicines1 = new PharmacyManagementSystem.PharmacistUC.UC_ViewMedicines();
+            this.uC_AddMedicine1 = new PharmacyManagementSystem.PharmacistUC.UC_AddMedicine();
+            this.uC_Dashboard1 = new PharmacyManagementSystem.PharmacistUC.UC_Dashboard();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_ViewMedicines1 = new PharmacyManagementSystem.PharmacistUC.UC_ViewMedicines();
-            this.uC_AddMedicine1 = new PharmacyManagementSystem.PharmacistUC.UC_AddMedicine();
-            this.uC_Dashboard1 = new PharmacyManagementSystem.PharmacistUC.UC_Dashboard();
-            this.uC_ModifyMed1 = new PharmacyManagementSystem.PharmacistUC.UC_ModifyMed();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -61,7 +60,6 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.Controls.Add(this.btnSellMdcn);
-            this.panel1.Controls.Add(this.btnMdcnVldt);
             this.panel1.Controls.Add(this.lblUsrname);
             this.panel1.Controls.Add(this.btnAddMdcn);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -90,36 +88,13 @@
             this.btnSellMdcn.Image = ((System.Drawing.Image)(resources.GetObject("btnSellMdcn.Image")));
             this.btnSellMdcn.ImageSize = new System.Drawing.Size(23, 23);
             this.btnSellMdcn.IndicateFocus = true;
-            this.btnSellMdcn.Location = new System.Drawing.Point(34, 634);
+            this.btnSellMdcn.Location = new System.Drawing.Point(34, 626);
             this.btnSellMdcn.Margin = new System.Windows.Forms.Padding(4);
             this.btnSellMdcn.Name = "btnSellMdcn";
             this.btnSellMdcn.Size = new System.Drawing.Size(400, 55);
             this.btnSellMdcn.TabIndex = 17;
             this.btnSellMdcn.Text = "Sell Medicine";
             this.btnSellMdcn.UseTransparentBackground = true;
-            // 
-            // btnMdcnVldt
-            // 
-            this.btnMdcnVldt.Animated = true;
-            this.btnMdcnVldt.BackColor = System.Drawing.Color.Transparent;
-            this.btnMdcnVldt.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnMdcnVldt.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMdcnVldt.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMdcnVldt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMdcnVldt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMdcnVldt.FillColor = System.Drawing.Color.Transparent;
-            this.btnMdcnVldt.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnMdcnVldt.ForeColor = System.Drawing.Color.White;
-            this.btnMdcnVldt.Image = ((System.Drawing.Image)(resources.GetObject("btnMdcnVldt.Image")));
-            this.btnMdcnVldt.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnMdcnVldt.IndicateFocus = true;
-            this.btnMdcnVldt.Location = new System.Drawing.Point(34, 564);
-            this.btnMdcnVldt.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMdcnVldt.Name = "btnMdcnVldt";
-            this.btnMdcnVldt.Size = new System.Drawing.Size(400, 55);
-            this.btnMdcnVldt.TabIndex = 16;
-            this.btnMdcnVldt.Text = "Medicine Validity Check";
-            this.btnMdcnVldt.UseTransparentBackground = true;
             // 
             // lblUsrname
             // 
@@ -152,7 +127,7 @@
             this.btnAddMdcn.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMdcn.Image")));
             this.btnAddMdcn.ImageSize = new System.Drawing.Size(27, 27);
             this.btnAddMdcn.IndicateFocus = true;
-            this.btnAddMdcn.Location = new System.Drawing.Point(33, 346);
+            this.btnAddMdcn.Location = new System.Drawing.Point(33, 363);
             this.btnAddMdcn.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddMdcn.Name = "btnAddMdcn";
             this.btnAddMdcn.Size = new System.Drawing.Size(400, 55);
@@ -221,7 +196,7 @@
             this.btnMdfMdcn.ForeColor = System.Drawing.Color.White;
             this.btnMdfMdcn.Image = ((System.Drawing.Image)(resources.GetObject("btnMdfMdcn.Image")));
             this.btnMdfMdcn.IndicateFocus = true;
-            this.btnMdfMdcn.Location = new System.Drawing.Point(33, 493);
+            this.btnMdfMdcn.Location = new System.Drawing.Point(33, 542);
             this.btnMdfMdcn.Margin = new System.Windows.Forms.Padding(4);
             this.btnMdfMdcn.Name = "btnMdfMdcn";
             this.btnMdfMdcn.Size = new System.Drawing.Size(400, 55);
@@ -268,7 +243,7 @@
             this.btnViewMdcn.Image = ((System.Drawing.Image)(resources.GetObject("btnViewMdcn.Image")));
             this.btnViewMdcn.ImageSize = new System.Drawing.Size(22, 22);
             this.btnViewMdcn.IndicateFocus = true;
-            this.btnViewMdcn.Location = new System.Drawing.Point(33, 419);
+            this.btnViewMdcn.Location = new System.Drawing.Point(33, 455);
             this.btnViewMdcn.Margin = new System.Windows.Forms.Padding(4);
             this.btnViewMdcn.Name = "btnViewMdcn";
             this.btnViewMdcn.Size = new System.Drawing.Size(400, 55);
@@ -291,25 +266,16 @@
             this.panel2.Size = new System.Drawing.Size(1412, 947);
             this.panel2.TabIndex = 1;
             // 
-            // guna2Elipse1
+            // uC_ModifyMed1
             // 
-            this.guna2Elipse1.BorderRadius = 0;
-            this.guna2Elipse1.TargetControl = this.panel2;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 0;
-            this.guna2Elipse2.TargetControl = this.panel2;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 0;
-            this.guna2Elipse3.TargetControl = this.panel2;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.BorderRadius = 0;
-            this.guna2Elipse4.TargetControl = this.panel2;
+            this.uC_ModifyMed1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_ModifyMed1.BackColor = System.Drawing.Color.White;
+            this.uC_ModifyMed1.Location = new System.Drawing.Point(-2, -1);
+            this.uC_ModifyMed1.Name = "uC_ModifyMed1";
+            this.uC_ModifyMed1.Size = new System.Drawing.Size(1412, 947);
+            this.uC_ModifyMed1.TabIndex = 3;
             // 
             // uC_ViewMedicines1
             // 
@@ -317,6 +283,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_ViewMedicines1.BackColor = System.Drawing.Color.White;
+            this.uC_ViewMedicines1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uC_ViewMedicines1.Location = new System.Drawing.Point(0, -1);
             this.uC_ViewMedicines1.Name = "uC_ViewMedicines1";
             this.uC_ViewMedicines1.Size = new System.Drawing.Size(1412, 947);
@@ -344,16 +311,25 @@
             this.uC_Dashboard1.Size = new System.Drawing.Size(1412, 948);
             this.uC_Dashboard1.TabIndex = 0;
             // 
-            // uC_ModifyMed1
+            // guna2Elipse1
             // 
-            this.uC_ModifyMed1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_ModifyMed1.BackColor = System.Drawing.Color.White;
-            this.uC_ModifyMed1.Location = new System.Drawing.Point(-2, -1);
-            this.uC_ModifyMed1.Name = "uC_ModifyMed1";
-            this.uC_ModifyMed1.Size = new System.Drawing.Size(1412, 947);
-            this.uC_ModifyMed1.TabIndex = 3;
+            this.guna2Elipse1.BorderRadius = 0;
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 0;
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 0;
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 0;
+            this.guna2Elipse4.TargetControl = this.panel2;
             // 
             // Pharmacist
             // 
@@ -388,7 +364,6 @@
         private Guna.UI2.WinForms.Guna2Button btnMdfMdcn;
         private Guna.UI2.WinForms.Guna2Button btnDshbrd;
         private Guna.UI2.WinForms.Guna2Button btnViewMdcn;
-        private Guna.UI2.WinForms.Guna2Button btnMdcnVldt;
         private Guna.UI2.WinForms.Guna2Button btnSellMdcn;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private PharmacistUC.UC_Dashboard uC_Dashboard1;

@@ -24,6 +24,7 @@ namespace PharmacyManagementSystem.PharmacistUC
         {
             query = " select * from medic ";
             setDataGridView(query);
+            txtFilter.SelectedIndex = 0;
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -62,6 +63,25 @@ namespace PharmacyManagementSystem.PharmacistUC
             {
                 query = " delete from medic where mid = '" + MediID + "' ";
                 fn.setData(query, "Medicine Deleted ✅");
+                UC_ViewMedicines_Load(this, null);
+            }
+        }
+
+        private void txtFilter_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            txtSearch.Text = "";
+            if (txtFilter.SelectedIndex == 1)
+            {
+                query = " select * from medic where eDate > getDate()";
+                setDataGridView(query);
+            }
+            else if (txtFilter.SelectedIndex == 2)
+            {
+                query = " select * from medic where eDate <= getDate() ";
+                setDataGridView(query);
+            }
+            else
+            {
                 UC_ViewMedicines_Load(this, null);
             }
         }

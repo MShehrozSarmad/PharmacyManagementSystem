@@ -31,6 +31,7 @@ namespace PharmacyManagementSystem.PharmacistUC
         {
             query = " select * from medic where mname like '" + txtSearch.Text + "%' ";
             setDataGridView(query);
+            txtFilter.SelectedIndex = 0;
 
         }
 

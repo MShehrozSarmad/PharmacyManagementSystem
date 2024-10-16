@@ -114,6 +114,12 @@
     <Compile Include="PharmacistUC\UC_ModifyMed.Designer.cs">
       <DependentUpon>UC_ModifyMed.cs</DependentUpon>
     </Compile>
+    <Compile Include="PharmacistUC\UC_SellMedicines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PharmacistUC\UC_SellMedicines.Designer.cs">
+      <DependentUpon>UC_SellMedicines.cs</DependentUpon>
+    </Compile>
     <Compile Include="PharmacistUC\UC_ViewMedicines.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PharmacistUC\UC_ModifyMed.resx">
       <DependentUpon>UC_ModifyMed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmacistUC\UC_SellMedicines.resx">
+      <DependentUpon>UC_SellMedicines.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PharmacistUC\UC_ViewMedicines.resx">
       <DependentUpon>UC_ViewMedicines.cs</DependentUpon>

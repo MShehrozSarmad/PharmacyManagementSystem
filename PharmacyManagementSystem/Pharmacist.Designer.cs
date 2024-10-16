@@ -272,16 +272,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_ModifyMed1.BackColor = System.Drawing.Color.White;
-            this.uC_ModifyMed1.Location = new System.Drawing.Point(-2, -1);
+            this.uC_ModifyMed1.Location = new System.Drawing.Point(0, -1);
             this.uC_ModifyMed1.Name = "uC_ModifyMed1";
             this.uC_ModifyMed1.Size = new System.Drawing.Size(1412, 947);
             this.uC_ModifyMed1.TabIndex = 3;
             // 
             // uC_ViewMedicines1
             // 
-            this.uC_ViewMedicines1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_ViewMedicines1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.uC_ViewMedicines1.BackColor = System.Drawing.Color.White;
             this.uC_ViewMedicines1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uC_ViewMedicines1.Location = new System.Drawing.Point(0, -1);

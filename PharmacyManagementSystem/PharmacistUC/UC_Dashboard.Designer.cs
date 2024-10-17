@@ -30,19 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Dashboard));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnReload = new Guna.UI2.WinForms.Guna2Button();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btbReload = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -94,22 +97,22 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(597, 21);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Color = System.Drawing.Color.Blue;
-            series3.Legend = "Legend1";
-            series3.Name = "Valid Medicines";
-            series4.ChartArea = "ChartArea1";
-            series4.Color = System.Drawing.Color.Red;
-            series4.Legend = "Legend1";
-            series4.Name = "Expired Medicines";
-            this.chart1.Series.Add(series3);
-            this.chart1.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.Blue;
+            series1.Legend = "Legend1";
+            series1.Name = "Valid Medicines";
+            series2.ChartArea = "ChartArea1";
+            series2.Color = System.Drawing.Color.Red;
+            series2.Legend = "Legend1";
+            series2.Name = "Expired Medicines";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(619, 659);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
@@ -128,11 +131,50 @@
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
+            // btbReload
+            // 
+            this.btbReload.Animated = true;
+            this.btbReload.AutoRoundedCorners = true;
+            this.btbReload.BackColor = System.Drawing.Color.Transparent;
+            this.btbReload.BorderColor = System.Drawing.Color.Transparent;
+            this.btbReload.BorderRadius = 15;
+            this.btbReload.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btbReload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btbReload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btbReload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btbReload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btbReload.FillColor = System.Drawing.Color.Transparent;
+            this.btbReload.FocusedColor = System.Drawing.Color.Transparent;
+            this.btbReload.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btbReload.ForeColor = System.Drawing.Color.Transparent;
+            this.btbReload.Image = ((System.Drawing.Image)(resources.GetObject("btbReload.Image")));
+            this.btbReload.ImageSize = new System.Drawing.Size(25, 25);
+            this.btbReload.Location = new System.Drawing.Point(270, 52);
+            this.btbReload.Margin = new System.Windows.Forms.Padding(4);
+            this.btbReload.Name = "btbReload";
+            this.btbReload.Size = new System.Drawing.Size(33, 32);
+            this.btbReload.TabIndex = 33;
+            this.btbReload.UseTransparentBackground = true;
+            this.btbReload.Click += new System.EventHandler(this.btbReload_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(252, 38);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(67, 63);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 32;
+            this.pictureBox2.TabStop = false;
+            // 
             // UC_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btbReload);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "UC_Dashboard";
@@ -141,6 +183,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,5 +196,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnReload;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Button btbReload;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

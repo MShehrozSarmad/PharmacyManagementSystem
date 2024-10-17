@@ -47,5 +47,10 @@ namespace PharmacyManagementSystem.PharmacistUC
             this.chart1.Series["Expired Medicines"].Points.Clear();
             loadChart();
         }
+
+        private void btbReload_Click(object sender, EventArgs e)
+        {
+            UC_Dashboard_Load(this, null);
+        }
     }
 }
